@@ -14,9 +14,10 @@ const User = mongoose.model('User', {
 })
 
 const haidar = new User({
-  name: 'Hanif',
+  name: 'Haidar',
   age: 25,
-  email: 'hanif@gmail.com'
+  email: 'haidar@gmail.com'
 })
 
+// db.collection('users').save() ...
 haidar.save().then(() => console.log('Created new user'))
