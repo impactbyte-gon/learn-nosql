@@ -1,5 +1,5 @@
 const PouchDB = require('pouchdb')
-const db = new PouchDB('my_database')
+const db = new PouchDB('mytasks')
 
 const addUser = name => {
   const newUser = {
