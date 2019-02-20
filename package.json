@@ -1,0 +1,24 @@
+{
+  "name": "learn-nosql",
+  "version": "1.0.0",
+  "description": "Learn NoSQL",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/impactbyte-gon/learn-nosql.git"
+  },
+  "keywords": [
+    "learn",
+    "nosql"
+  ],
+  "author": "M Haidar Hanif",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/impactbyte-gon/learn-nosql/issues"
+  },
+  "homepage": "https://github.com/impactbyte-gon/learn-nosql#readme"
+}

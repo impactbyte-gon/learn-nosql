@@ -1,2 +1,6 @@
-# learn-nosql
-Learn NoSQL
+# Learn NoSQL
+
+Learn NoSQL with:
+
+- PouchDB
+- MongoDB
