@@ -46,6 +46,22 @@ app.get('/users', async (req, res) => {
   })
 })
 
+app.post('/users', async (req, res) => {
+  const newUser = new User({
+    name: req.body.name || null,
+    age: req.body.age || null,
+    email: req.body.email || null,
+    birthDate: req.body.birthDate || null
+  })
+
+  await newUser.save()
+
+  res.send({
+    message: 'Created new user',
+    newUser: newUser
+  })
+})
+
 app.get('/tasks', async (req, res) => {
   res.send({
     message: 'List of all tasks',
