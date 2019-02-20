@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/impactbyte-gon/learn-nosql/issues"
   },
-  "homepage": "https://github.com/impactbyte-gon/learn-nosql#readme"
+  "homepage": "https://github.com/impactbyte-gon/learn-nosql#readme",
+  "devDependencies": {
+    "nodemon": "1.18.10"
+  }
 }
