@@ -23,5 +23,8 @@
   "homepage": "https://github.com/impactbyte-gon/learn-nosql#readme",
   "devDependencies": {
     "nodemon": "1.18.10"
+  },
+  "dependencies": {
+    "pouchdb": "7.0.0"
   }
 }
