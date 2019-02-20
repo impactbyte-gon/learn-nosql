@@ -11,11 +11,17 @@ const createNewUser = function(db) {
     email: 'mhaidarhanif@gmail.com'
   }
 
-  db.collection('users').insert(newUser, function(err, result) {
-    console.log({
-      message: 'Created new user',
-      result: result
-    })
+  db.collection('users').insert(newUser, (err, result) => {
+    if (err) {
+      console.log({
+        message: 'Failed to create new user'
+      })
+    } else {
+      console.log({
+        message: 'Created new user',
+        result: result
+      })
+    }
   })
 }
 
