@@ -5,6 +5,8 @@ mongoose.connect(`${process.env.URL}/${process.env.DB_NAME}`, {
   useNewUrlParser: true
 })
 
+// User => users
+// Account => accounts
 const User = mongoose.model('User', {
   name: String,
   age: Number,
@@ -12,9 +14,9 @@ const User = mongoose.model('User', {
 })
 
 const haidar = new User({
-  name: 'Haidar',
+  name: 'Hanif',
   age: 25,
-  email: 'mhaidarhanif@gmail.com'
+  email: 'hanif@gmail.com'
 })
 
 haidar.save().then(() => console.log('Created new user'))
