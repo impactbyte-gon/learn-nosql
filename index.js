@@ -39,10 +39,15 @@ app.get('/', (req, res) => {
   })
 })
 
+// use async if we want to use await inside the function
 app.get('/users', async (req, res) => {
+  const users = await User.find() // slow process
+  // wait until User.find() is finished using await
+
+  // fast process
   res.send({
     message: 'List of all users',
-    users: await User.find()
+    users: users
   })
 })
 
@@ -54,8 +59,10 @@ app.post('/users', async (req, res) => {
     birthDate: req.body.birthDate || null
   })
 
-  await newUser.save()
+  // wait until newUser is saved into the database
+  await newUser.save() // slow process
 
+  // send response only after newUser.save() is finished
   res.send({
     message: 'Created new user',
     newUser: newUser
