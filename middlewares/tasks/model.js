@@ -5,12 +5,11 @@ mongoose.connect(`${process.env.URL}/${process.env.DB_NAME}`, {
   useNewUrlParser: true
 })
 
-// User model => users collection
-const User = mongoose.model('User', {
-  name: String,
-  age: Number,
-  email: String,
-  birthDate: Date
+// Task model => tasks collection
+const Task = mongoose.model('Task', {
+  text: String,
+  completed: Boolean,
+  date: Date
 })
 
-module.exports = User
+module.exports = Task
